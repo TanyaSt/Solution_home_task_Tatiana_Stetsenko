@@ -1,0 +1,31 @@
+POST http://localhost:8080/auth/registration
+Content-Type: application/json;
+
+{
+  "username": "tanya",
+  "password": "12345"
+}
+
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json;
+
+{
+  "username": "tanya",
+  "password": "12345"
+}
+
+###
+POST http://localhost:8080/employees
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoiM2FhYjdlYTUtN2NhNC00NDVkLTg4ZjgtNzg5NDc2OWJkMGViIiwiaXNzIjoiVGVsUmFuIiwiZXhwIjoxNjMzMDI2NDgxLCJpYXQiOjE2MzMwMjU4ODF9._nAIhg-hW3XLmiorCyYa9qro3iXArf7R-UscXxLM7p1prVwEwyx6PJq3oMwz1LnInTxqKgrUnnsQMPg4v_xfYQ
+
+{
+  "sn": "12324"
+}
+
+###
+GET http://localhost:8080/employees
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoiM2FhYjdlYTUtN2NhNC00NDVkLTg4ZjgtNzg5NDc2OWJkMGViIiwiaXNzIjoiVGVsUmFuIiwiZXhwIjoxNjMzMDI2NDgxLCJpYXQiOjE2MzMwMjU4ODF9._nAIhg-hW3XLmiorCyYa9qro3iXArf7R-UscXxLM7p1prVwEwyx6PJq3oMwz1LnInTxqKgrUnnsQMPg4v_xfYQ
